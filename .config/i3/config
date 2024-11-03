@@ -167,4 +167,3 @@ bindsym $mod+c exec i3-msg "rename workspace to "$(i3-msg -t get_workspaces | jq
 
 # screenshot
 bindsym Print exec flameshot gui
-exec --no-startup-id picom -o .90
