@@ -1,2 +1,3 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill ~/.wallpaper/23.jpg
+wal -i ~/.wallpaper/23.jpg
+wal -b 000000 -R
