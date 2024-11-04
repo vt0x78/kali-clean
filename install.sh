@@ -20,6 +20,7 @@ fc-cache -fv
 wget https://github.com/barnumbirr/alacritty-debian/releases/download/v0.10.0-rc4-1/alacritty_0.10.0-rc4-1_amd64_bullseye.deb
 sudo dpkg -i alacritty_0.10.0-rc4-1_amd64_bullseye.deb
 sudo apt install -f
+sudo apt upgrade alacritty
 
 git clone https://www.github.com/Airblader/i3 i3-gaps
 cd i3-gaps && mkdir -p build && cd build && meson ..
@@ -27,7 +28,7 @@ ninja
 sudo ninja install
 cd ../..
 
-pip3 install pywal
+pipx install pywal
 
 mkdir -p ~/.config/i3
 mkdir -p ~/.config/compton
